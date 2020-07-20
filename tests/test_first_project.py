@@ -14,7 +14,7 @@ class EasyTestCase(unittest.TestCase):
 class MediumTestCase(unittest.TestCase):
 	def test_medium_input(self):
 		with self.assertRaises(Exception):
-			self.assertEqual(avg(1, 2, 3, 'Mohammad'), 2)
+			self.assertEqual(avg(1, 2, 3, 'Joanna'), 2)
 	
 	def test_medium_input_two(self):
 		with self.assertRaises(Exception):
@@ -29,7 +29,7 @@ class HardTestCase (unittest.TestCase):
 	
 	def test_hard_input_two(self):
 		with self.assertRaises (Exception):
-			self.assertEqual (avg (10, 10, 10, 10, float), 10)
+			self.assertEqual (avg (10, 10, 10, 10, 1.5), 10)
 
 	def test_hard_input_three(self):
 		with self.assertRaises (Exception):

@@ -1,3 +1,5 @@
+# Unit testing function avg from first_project.py
+
 import unittest
 from first_project import avg
 

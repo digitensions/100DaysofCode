@@ -1,3 +1,5 @@
+# Testing script functions using PyUnit unittest.TestCase
+
 import unittest
 from challenge import counter
 

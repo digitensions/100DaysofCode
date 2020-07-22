@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+
+'''
+Class that first defines Coin in it's various stages of rusty, clean, and rare.
+Following classes use Coin, but have different dictionary data for each type of coin (polymorphs)
+'''
+
 import random
 
 class Coin:
@@ -90,7 +97,7 @@ class Five_Pence(Coin):
         super().__init__(**data)
     
         def rust(self):
-            self.colour = self.clean_colour
+            self.colour = self.clean_colour  # Some silver coins do not rust
     
 class Ten_Pence(Coin):
     def __init__(self):

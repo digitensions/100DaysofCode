@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 '''
 Easy and Medium unit tests for simple averaging script
 Imports unittest and function from tested module

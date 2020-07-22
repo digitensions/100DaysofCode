@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Testing script functions using PyUnit unittest.TestCase
 
 import unittest

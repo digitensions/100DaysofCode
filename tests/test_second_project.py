@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
-# Tests for classes, using setUp and tearDown
-# Instantiating objects to access the class
- 
+'''
+Tests for classes, using setUp and tearDown
+Instantiating objects to access the class
+'''
+
 import unittest
 from second_project import Counter
 

@@ -2,6 +2,7 @@
 
 """
 Coding Challenge #2, for use with test_challenge_two.py in tests/
+Creating a self driving car, making sure a few cases result in safe usage.
 """
 
 class Car:

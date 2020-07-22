@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
+
 # Unit testing function avg from first_project.py
 
 import unittest
 from first_project import avg
-
 
 class EasyTestCase(unittest.TestCase):
 	
@@ -12,7 +13,6 @@ class EasyTestCase(unittest.TestCase):
 	def test_easy_input_two(self):
 		self.assertEqual(avg (10, 10, 10, 10, 10), 10)
 
-
 class MediumTestCase(unittest.TestCase):
 	def test_medium_input(self):
 		with self.assertRaises(Exception):
@@ -21,7 +21,6 @@ class MediumTestCase(unittest.TestCase):
 	def test_medium_input_two(self):
 		with self.assertRaises(Exception):
 			self.assertEqual(avg(10, 10, 10, 10, '10'), 10)
-
 
 class HardTestCase (unittest.TestCase):
 	
@@ -40,8 +39,6 @@ class HardTestCase (unittest.TestCase):
 	def test_hard_input_four(self):
 		with self.assertRaises (Exception):
 			self.assertEqual (avg (10, 10, 10, 10, set), 10)
-
-
 
 if __name__ == '__main__':
 	unittest.main()

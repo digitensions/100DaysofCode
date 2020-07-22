@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def avg(*list_numbers):
     total = 0
     for num in list_numbers:
@@ -6,4 +8,3 @@ def avg(*list_numbers):
         else:
             raise TypeError("Wrong input data. Please make sure that everything is a number.")
     return total /len(list_numbers)
- 

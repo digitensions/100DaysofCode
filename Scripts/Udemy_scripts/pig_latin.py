@@ -1,8 +1,14 @@
-# get sentence from user
+#!/usr/bin/env python3
+
+'''
+Script to convert sentences into pig latin.
+'''
+
+# Receive input sentence from user, converted to lowercase and stripped of leading/trailing characters
 original = input("Please provide a sentence to convert to pig latin: ").strip().lower()
-#split sentence into words
+# split sentence into words
 words = original.split()
-#loop through words and convert to pig latin
+# loop through words and convert to pig latin
 new_words = []
 for w in words:
     if w[0] in "aeiou":

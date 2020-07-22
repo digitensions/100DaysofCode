@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+
+'''
+This script makes a noughts and crosses game (tic, tac, toe).
+Player 1 and user 2 pick board numbers between 1 and 9 (specified in print_board function).
+When one player has three in a row horizontally, vertically or diagonally they are declared winner.
+If not one wins a draw is declared.
+'''
+
 # generates spaces for the board using list comprehensions
 board = [" " for i in range(9)]
 # function to make board 3 x 3

@@ -13,7 +13,7 @@ from fourth_project import FibonacciSequence
 class TestEfficiency(unittest.TestCase):
     def setUp(self):
         self._fibonacci_sequence = FibonacciSequence()
-        self._efficiency_data = dict()                      # dictionary to store efficiency test data
+        self._efficiency_data = {}                          # dictionary to store efficiency test data
 
     def test_first_method(self):
         starting_time = time.time()                         # start timing for following code

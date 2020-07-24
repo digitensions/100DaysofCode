@@ -5,7 +5,6 @@ Learning script that references a dictionary of films to see if user input film 
 Asks you to enter a film you'd like to check, then lists the item and it's rank if successful.
 If not, asks if you'd like to see the complete list.
 Asks finally if you'd like to restart the process by checking another title or not.
-Reworked into multiple functions to allow for better unittest functionality.
 '''
 
 films = {
@@ -66,22 +65,24 @@ def main():
     print("You can use this script to check whether your favourite film of 2019")
     print("made it to their top 50 and which position the BFI gave it...\n")
     choice()
+    retry()
+    ranking()
+    exit_script()
 
 def choice():
     choose = str(input("Which film do you want to check?: ")).strip().title()
     if choose in films:
         print("\nThe film",choose,"is in the top 50, positioned at number",films[choose][0])
-        retry()
     else:
-        print("\nYour film choice doesn't appear in the list, what a shame :(\n")
-        retry()
+        print("\nYour film choice doesn't appear in the list, what a shame\n")
 
 def retry():
     try_again = str(input("\nWould you like to try checking another film title? [y/n]: ")).strip().lower()
-    if try_again[0] == "n":         # If no, they can see a list of all the films and exit quickly
-        ranking()
+    if try_again[0] == "n":
+        pass
     elif try_again[0] == "y":
-        main()
+        print("Okay, let's run this thing from the top again!")
+        choice()
     else:
         print("Please try again answering just with an 'n' or 'y'")
         retry()
@@ -92,9 +93,8 @@ def ranking():
         print("\nThe BFI's top 50 films for 2019 and their ranking: \n")
         for i in films:
             print(i,films[i])
-        exit_script()
     elif answer[0] == "n":
-        exit_script()
+        pass
     else:
         print("Please try again answering just with an 'n' or 'y'")
         ranking()

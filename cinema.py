@@ -81,8 +81,11 @@ def retry():
     try_again = str(input("\nWould you like to try checking another film title? [y/n]: ")).strip().lower()
     if try_again[0] == "n":         # If no, they can see a list of all the films and exit quickly
         ranking()
-    else:
+    elif try_again[0] == "y":
         main()
+    else:
+        print("Please try again answering just with an 'n' or 'y'")
+        retry()
 
 def ranking():
     answer = str(input("\nWould you like to see the complete list of films? [y/n]: ")).strip().lower()
@@ -91,12 +94,14 @@ def ranking():
         for i in films:
             print(i,films[i])
         exit_script()
-    else:
+    elif answer[0] == "n":
         exit_script()
+    else:
+        print("Please try again answering just with an 'n' or 'y'")
+        ranking()
 
 def exit_script():
-    print()
-    print("Thanks so much for trying out this BFI 'Film of 2019' checker. Good bye!\n")
+    print("\nThanks so much for trying out this BFI 'Film of 2019' checker. Good bye!\n")
     quit()
 
 if __name__ == '__main__':

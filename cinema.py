@@ -67,7 +67,6 @@ def main():
     print("made it to their top 50 and which position the BFI gave it...\n")
     choice()
 
-
 def choice():
     choose = str(input("Which film do you want to check?: ")).strip().title()
     if choose in films:

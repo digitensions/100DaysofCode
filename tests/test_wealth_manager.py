@@ -62,7 +62,8 @@ class TestCalculate(unittest.TestCase):
 		                                2031: [23.0, 216578]}
 	
 	def test_calculate_easy_first(self):
-		"""Year number: 2019, Apt number owned 0 Passive Income $70000
+	"""
+		Year number: 2019, Apt number owned 0 Passive Income $70000
             Year number: 2020, Apt number owned 1.0 Passive Income $66666
             Year number: 2021, Apt number owned 2.0 Passive Income $69998
             Year number: 2022, Apt number owned 3.0 Passive Income $79996
@@ -84,7 +85,8 @@ class TestCalculate(unittest.TestCase):
 			self.assertEqual(self._calculator_obj_one.get_results().get(k), self._calculator_data_one.get(k))
 	
 	def test_calculate_easy_second(self):
-		"""Year number: 2019, Apt number owned 1.0 Passive Income $6666
+	"""
+		Year number: 2019, Apt number owned 1.0 Passive Income $6666
             Year number: 2020, Apt number owned 2.0 Passive Income $19998
             Year number: 2021, Apt number owned 3.0 Passive Income $39996
             Year number: 2022, Apt number owned 4.0 Passive Income $66660
@@ -104,7 +106,8 @@ class TestCalculate(unittest.TestCase):
 			self.assertEqual(self._calculator_obj_two.get_results().get(k), self._calculator_data_two.get(k))
 	
 	def test_calculate_easy_third(self):
-		"""Year number: 2019, Apt number owned 1.0 Passive Income $16666
+	"""
+		Year number: 2019, Apt number owned 1.0 Passive Income $16666
             Year number: 2020, Apt number owned 2.0 Passive Income $39998
             Year number: 2021, Apt number owned 3.0 Passive Income $69996
             Year number: 2022, Apt number owned 4.0 Passive Income $106660
@@ -118,7 +121,7 @@ class TestCalculate(unittest.TestCase):
             Year number: 2030, Apt number owned 20.0 Passive Income $213260
             Year number: 2031, Apt number owned 23.0 Passive Income $216578
             You can reach a passive income of $150000, but it will take: 13 years
-		"""
+	"""
 		# Comparison between calculations from get_results, and imputted calculations in dictionary using .get
 		# Loops through the years.
 		for k in self._calculator_obj_three.get_results().keys():
@@ -165,7 +168,7 @@ class TestGetYearsNeeded(unittest.TestCase):
 		self.assertEqual(self._calculator_obj_three.get_years_needed(), 12)
 
 	def test_years_needed_medium_first(self):
-		#
+		# still to be written
 		pass
 	
 	def test_years_needed_medium_second(self):
@@ -200,6 +203,7 @@ class TestGetApartmentsNeeded(unittest.TestCase):
 		self.assertEqual(self._calculator_obj_three.get_apartments_needed(), 23)
 	
 	def test_apartments_needed_medium_first(self):
+		# still to be written
 		pass
 	
 	def test_apartments_needed_medium_second(self):
@@ -234,6 +238,7 @@ class TestGetNetWorth(unittest.TestCase):
 		self.assertEqual(self._calculator_obj_three.get_net_worth(), 1840000)
 	
 	def test_net_worth_medium_first(self):
+		# still to be written
 		pass
 	
 	def test_net_worth_medium_second(self):

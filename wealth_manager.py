@@ -71,5 +71,5 @@ class Calculator:
             print("Year number: {0}, Apt number owned {1} Passive income ${2}".format(k, v[0], round(v[1])))
         print("You can reach a passive income of ${0}, in {1} years".format(self._annual_passive_income, self.get_years_needed()))
 
-calculator_obj_one = Calculator(15000, 5000, 2020, 80000, 6666)
+calculator_obj_one = Calculator(150000, 70000, 2019, 80000, 6680)
 calculator_obj_one.print_results()

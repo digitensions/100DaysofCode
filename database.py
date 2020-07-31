@@ -9,11 +9,11 @@ Only successful way found to pip install into VENV on MacOs and run from within 
 Made it user interactive so it asks for a word to be supplied before information returned.
 '''
 
-con = mysql.connector.connect(
-    user = "ardit700_student",
-    password = "ardit700_student",
-    host = "108.167.140.122",
-    database = "ardit700_pm1database"
+con = mysql.connector.connect(                      # Training connection info available
+    user = "user",
+    password = "password",
+    host = "0.0.0.0",
+    database = "database01"
 )
 cursor = con.cursor()
 

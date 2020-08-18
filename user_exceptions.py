@@ -8,15 +8,15 @@ Borrowed/adapted from https://www.programiz.com/python-programming/online-compil
 
 # define Python user-defined exceptions
 class Error(Exception):
-    """Base class for other exceptions"""
+    '''Base class for other exceptions'''
     pass
 
 class ValueTooSmallError(Error):
-    """Raised when the input value is too small"""
+    '''Raised when the input value is too small'''
     pass
 
 class ValueTooLargeError(Error):
-    """Raised when the input value is too large"""
+    '''Raised when the input value is too large'''
     pass
 
 # you need to guess this number

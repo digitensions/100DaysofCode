@@ -3,6 +3,7 @@
 '''
 A short guessing game that uses custom built exceptions as classes
 to correct a users guesses until they find the specific number value.
+Borrowed/adapted from https://www.programiz.com/python-programming/online-compiler/?ref=8329c0ac
 '''
 
 # define Python user-defined exceptions
@@ -31,10 +32,8 @@ while True:
             raise ValueTooLargeError
         break
     except ValueTooSmallError:
-        print("This value is too small, try again!")
-        print()
+        print("This value is too small, try again!\n")
     except ValueTooLargeError:
-        print("This value is too large, try again!")
-        print()
+        print("This value is too large, try again!\n")
 
 print("Congratulations! You guessed it correctly.")

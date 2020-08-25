@@ -9,10 +9,10 @@ app.config["DEBUG"] = True
 
 books = [
     {'id': 0,
-    'title': 'A Fire Upon the Deep',
-    'author': 'Vernor Vinge',
-    'first_sentence': 'The cold sleep iteself was dreamless.',
-    'year_published': '1992'},
+    'title': 'The Peregrine',
+    'author': 'J A Baker',
+    'first_sentence': 'East of my home, the long ridge lies across the skyline like the low hull of a submarine.',
+    'year_published': '1967'},
     {'id': 1,
     'title': 'Ted Talks',
     'author': 'Chris Anderson',

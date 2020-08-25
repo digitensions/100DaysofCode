@@ -8,7 +8,7 @@ You can separately view each dictionary entry (displayed in JSON) by using ?id=1
 `127.0.0.1:5000/api/v1/resources/books?id=1`
 
 ## python api_database.py
-This script needs the database.db file in the same directory alongside it.
+This script needs the books.db file in the same directory alongside it.
 Again you can navigate to the following link (don't try to run these two script together):
 `127.0.0.1:5000/api/v1/resources/books/all`
 In addition you can set queries using the dictionary IDs:

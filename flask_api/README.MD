@@ -1,6 +1,6 @@
 ### To use these API scripts you will need to install Python3 and Flask.
 
-### python api.py
+### python api_local.py
 Navigate to this address using a browser once the script is running:
 127.0.0.1:5000/api/v1/resources/books/all
 This script calls on a script dictionary of my current reading materials! (Don't judge me).
